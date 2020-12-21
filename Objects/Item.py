@@ -13,3 +13,6 @@ class Item:
 
     def __str__(self):
         return f"{self.name}"
+
+    # def __eq__(self, other):
+    #     return self.name == other.name and self.price == other.price and self.isStackable == other.isStackable

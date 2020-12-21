@@ -16,6 +16,9 @@ class MoneyAmount:
     def __repr__(self):
         return str(self)
 
+    def __eq__(self, other):
+        return self.gold == other.gold and self.silver == other.silver
+
     def __gt__(self, amount):
         amountInSilver = self.silver + self.gold * MoneyAmount.SilverInGold
         otherAmountInSilver = amount.silver + amount.gold * MoneyAmount.SilverInGold

@@ -53,6 +53,16 @@ class Inventory:
         """
         self.size.SetNewMax(self.size.max + toIncrease)
 
+    def GetAmountOfItem(self, item: Item) -> int:
+        """
+        Gets the amount of an item in the inventory
+        :param item: item to find the amount of
+        :return: number of instances of this item in the inventory
+        """
+        if item not in self.inventory:
+            return 0
+        return self.inventory[item]
+
     def Clear(self):
         """
         Clears the inventory
