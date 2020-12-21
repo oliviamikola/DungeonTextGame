@@ -1,6 +1,7 @@
 from Characters.Character import Character
 from Helpers.MaxTracker import MaxTracker
 
+
 class AttackingCharacter(Character):
     """
     Class representing an attacking character
@@ -12,4 +13,7 @@ class AttackingCharacter(Character):
         self._ResetStats()
 
     def _ResetStats(self):
+        pass
+
+    def Attack(self):
         pass

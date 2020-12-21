@@ -11,14 +11,14 @@ class Monster(AttackingCharacter):
     def _ResetStats(self):
         self.health = 60
 
-    def attack(self):
+    def Attack(self):
         """
         Attacks the player if player is visible to the monster
         :return:
         """
         pass
 
-    def drop(self):
+    def Drop(self):
         """
         Decides what the monster drops upon death
         :return:

@@ -7,4 +7,3 @@ class Character:
     """
     def __init__(self):
         self.inventory = Inventory()
-        self.health = 20

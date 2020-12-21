@@ -25,6 +25,12 @@ class Inventory:
             rep += ', '
         return rep.strip(", ")
 
+    def __getitem__(self, itemName: str):
+        for item in self.inventory:
+            if item.name == itemName:
+                return item
+        return None
+
     def GetSize(self):
         """
         Gets the current size of the inventory
